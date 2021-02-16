@@ -1,0 +1,994 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Immortal Balkans</title>
+
+    <style type="text/css">
+
+        .navbar {
+            height: 100px;
+            position: static;
+            background-color: #000000 !important;
+        }
+
+
+        .navbar-right {
+            position: static;
+            right: 0;
+        }
+
+            .navbar-right li {
+                float: right;
+            }
+
+        .wrap {
+            padding: 15px;
+        }
+
+        .pozadinaMerch {
+            background-image: url("pozadinaMerch.jpg");
+            height: 1225px;
+        }
+
+        #absolute {
+            position: relative;
+            width: 100%;
+            height: 100px;
+            margin: 0;
+        }
+
+        .jumbotron {
+            background-image: url("webpagelogoo.jpeg");
+            background-size: cover;
+            height: 950px;
+        }
+
+        .btn {
+            margin: auto 43%;
+            margin-top: 100px;
+        }
+
+        .slova {
+            color: #E18403 !important;
+        }
+
+            .slova:hover {
+                background-color: blue !important;
+                color: white !important;
+            }
+
+        .slika {
+            height: 600px;
+            background: url(../velikaSlika4.jpg);
+            margin-top: -18px;
+        }
+
+        .merch {
+            padding-left: 46%;
+            padding-right: 46%;
+            padding-top: 50px;
+        }
+
+        .merch2 {
+            padding-left: 32%;
+            padding-right: 32%;
+            padding-bottom: 50px;
+            font-size: 50px;
+            color: #FFC246;
+        }
+
+
+        .container2 {
+            width: auto;
+            -webkit-transition: left 4s ease;
+            transition: left 4s ease;
+        }
+
+        #grad {
+            background-image: linear-gradient(red, yellow);
+            width: 100% !important;
+            height: 255px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .aboutUsContainer {
+            width: 1490px;
+            margin-left: 12%;
+        }
+
+        .aboutUsSlova {
+            font-size: 1.2rem;
+        }
+
+        #aboutUs {
+            height: 100px;
+        }
+
+        .contact {
+            padding: 4%;
+            height: 400px;
+            margin-bottom: 377px;
+            width: 100%;
+            margin-left: -67px;
+            margin-top: 0px !important;
+        }
+
+        .col-md-3 {
+            background: #ff9b00;
+            padding: 4%;
+            border-top-left-radius: 0.5rem;
+            border-bottom-left-radius: 0.5rem;
+        }
+
+        .contact-info {
+            margin-top: 10%;
+        }
+
+            .contact-info img {
+                margin-bottom: 15%;
+            }
+
+            .contact-info h2 {
+                margin-bottom: 10%;
+            }
+
+        .col-md-9 {
+            background: #fff;
+            padding: 3%;
+            border-top-right-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
+        }
+
+        .contact-form label {
+            font-weight: 600;
+        }
+
+        .contact-form button {
+            background: #25274d;
+            color: #fff;
+            font-weight: 600;
+            width: 25%;
+        }
+
+            .contact-form button:focus {
+                box-shadow: none;
+            }
+
+            
+
+            .footer-copyright {
+
+                position: relative;
+                padding-bottom: -200px;
+
+            }
+
+            #partners {
+
+                margin-top: 100px;
+                background-color: black;
+                color: white;
+                margin-bottom: -100px;
+                height: 500px;
+                padding-top: 30px;
+
+            }
+
+        .partners {
+            margin: 50px;
+            color: #FF9B00;
+        }
+
+            .partnerSlike {
+
+                margin-left: 50px;
+
+            }
+
+            .hell {
+
+                padding-top: 30px;
+
+            }
+
+            .rematch {
+
+                position: relative;
+                margin-top: -25px;
+
+            }
+
+        .hellText {
+            position: relative;
+            padding-top: 100px;
+            
+        }
+
+        .rematchText {
+            position: relative;
+            padding-top: 50px;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: red;
+        }
+
+        a:active {
+            text-decoration: none;
+            color: red;
+        }
+
+
+        /* strijelice */
+        .container {
+            position: relative;
+            width: 100%
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .cursor {
+            cursor: pointer;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .next {
+            right: 15px;
+            border-radius: 3px 0 0 3px;
+        }
+
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            float: left;
+            width: 16.66%;
+        }
+
+        .demo {
+            opacity: 0.6;
+        }
+
+            .active,
+            .demo:hover {
+                opacity: 1;
+            }
+
+        .merchText {
+            text-align: center;
+            padding: 80px 0px;
+            animation: zoomin 5s linear;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+        }
+
+        .checkMerch {
+            background-color: black;
+            color: white;
+        }
+
+        .youtubeIB {
+            margin-left: 12%;
+            margin-right: 135px;
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+
+        .youtubeLink {
+            position: relative;
+            width: 1280px;
+            margin-left: 12%;
+            margin-top: 150px;
+        }
+
+        .youtubeButton {
+            background-color: red;
+            color: black !important;
+            margin-left: 10%;
+        }
+
+            .youtubeButton a:visited {
+                background-color: black;
+                color: white;
+                text-decoration: none;
+            }
+
+            .youtubeButton a:hover {
+                background-color: red;
+                color: blue;
+                text-decoration: none;
+            }
+
+        .socialStranica {
+            margin: 25px;
+        }
+
+        .video {
+            padding-left: 218px;
+        }
+
+        .instaProfil {
+            position: absolute;
+            margin-top: 350px;
+            margin-left: 955px;
+        }
+
+
+
+        .page-footer {
+            margin-top: 300px;
+            background-color: #000000;
+            color: #E18403;
+        }
+
+        .textFooter {
+
+            margin-left: -250px;
+
+        }
+
+        /* fiksirane ikone */
+        .icon-bar {
+            position: fixed;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            right: 0;
+        }
+
+            .icon-bar a {
+                display: block;
+                text-align: center;
+                padding: 16px;
+                transition: all 0.3s ease;
+                color: white;
+                font-size: 20px;
+            }
+
+                .icon-bar a:hover {
+                    background-color: #000;
+                }
+
+        .facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .instagram {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .footerText {
+            padding-left: 80px;
+        }
+
+        .logo {
+            width: 78px;
+            height: 78px;
+            margin: 15px;
+            margin-right: 25px;
+            margin-left: -10px;
+        }
+
+        .ispodSlike {
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        video-container {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+
+        .video-container::after {
+            padding-top: 56.25%;
+            display: block;
+            content: '';
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+        @-webkit-keyframes zoomin {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.5);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes zoomin {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.5);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            [class*="mobile"] {
+                width: 100%;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="navbar-dark bg-dark wrap navbar" id="absolute">
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="home">
+
+                <a class="navbar-brand left" href="#home" style="color: #E18403"><image src="logo.png" class="logo"></image>Immortal Balkans Esport</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            </nav>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-right">
+
+                <div class="wrap">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+
+                            <li class="nav-item">
+                                <a class="nav-link slova" href="file:///C:/Users/admer/OneDrive/Desktop/Projekti/Immortal%20Balkans%20kod.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link slova" href="#aboutUs">About us</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link slova" href="#partners">Partners</a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link slova" href="#contact">Contact</a>
+                            </li>
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle slova" href="file:///C:/Users/admer/OneDrive/Desktop/Projekti/IBShop.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Shop
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="file:///C:/Users/admer/OneDrive/Desktop/Projekti/Hoodies.html">Merch</a>
+
+                                </div>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link slova" href="file:///C:/Users/admer/OneDrive/Desktop/Projekti/IBPrivacyStatement.html">Privacy Statment</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <div class="container2">
+
+        <div class="row" onload="script();">
+
+            <div class="col-sm">
+
+                <div class="slika"><p> </p></div>
+
+                <div class="ispodSlike" id="grad">
+
+                    <div class="merch">
+
+                        <p>
+
+                            <a href="#merch"><span><button type="button" class="checkMerch">CHECK MERCH</button></span></a>
+
+                        </p>
+
+                    </div>
+
+                    <div class="merch2">
+
+                        <p> DESTINED FOR GREATNESS!</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="merchText" style="font-size: 20px;">
+
+
+        <p>What makes the difference?</p>
+        <p>Check out and order our official T-shirts and hoodies!</p>
+        <p>Why?</p>
+        <p>Because they are hand tailored, hand-sewed, made from extra quality material and printed with high quality print.</p>
+        <p>Simply: made to last.</p>
+
+
+
+    </div>
+
+
+    <!-- Container za sliku -->
+    <div class="pozadinaMerch">
+        <div class="container" id="merch" style="height: 1000px;">
+
+            <!-- velike slike sa brojem slike -->
+            <div class="mySlides" style="height: 1000px;">
+                <div class="numbertext">1 / 6</div>
+                <img src="unnamed1.jpg" style="width:100%; height: 1000px">
+            </div>
+
+            <div class="mySlides" style="height: 1000px;">
+                <div class="numbertext">2 / 6</div>
+                <img src="unnamed2.jpg" style="width:100%; height: 1000px">
+            </div>
+
+            <div class="mySlides" style="height: 1000px;">
+                <div class="numbertext">3 / 6</div>
+                <img src="unnamed3.jpg" style="width:100%; height: 1000px">
+            </div>
+
+            <div class="mySlides" style="height: 1000px;">
+                <div class="numbertext">4 / 6</div>
+                <img src="unnamed4.jpg" style="width:100%; height: 1000px">
+            </div>
+
+            <div class="mySlides" style="height: 1000px;">
+                <div class="numbertext">5 / 6</div>
+                <img src="unnamed5.jpg" style="width:100%; height: 1000px">
+            </div>
+
+            <div class="mySlides" style="height: 1000px;">
+                <div class="numbertext">6 / 6</div>
+                <img src="unnamed6.jpg" style="width:100%; height: 1000px">
+            </div>
+
+            <!-- Next and previous button -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail slike -->
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="unnamed1.jpg" style="width:100%" onclick="currentSlide(1)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="unnamed2.jpg" style="width:100%" onclick="currentSlide(2)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="unnamed3.jpg" style="width:100%" onclick="currentSlide(3)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="unnamed4.jpg" style="width:100%" onclick="currentSlide(4)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="unnamed5.jpg" style="width:100%" onclick="currentSlide(5)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="unnamed6.jpg" style="width:100%" onclick="currentSlide(6)">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+    </div>
+
+    <div class="youtubeLink">
+
+        <div class="youtubeSlika">
+
+            <img src="youtubeSlika2.jpeg" />
+
+        </div>
+
+
+    </div>
+
+    <div class="socialStranica">
+        <div class="row">
+            <div class="col-6 video">
+
+                <iframe width="700" height="500" src="https://www.youtube.com/embed/videoseries?list=UUfInEvfkltF4cFvcWpKmjiA&index=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+
+            <div class="col-3 instaStranica">
+
+                <img src="insta-slika.jpeg" />
+
+            </div>
+
+            <div class="col-3 instaStranica">
+                <img width="300px" height="300px" style="margin-left: -15px; width= 300px; height=300px;" src="instaSlika2.jpeg" />
+            </div>
+
+            <div class="instaProfil">
+
+                <img width="600px" height="150px" src="instaProfil.jpg" />
+
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+
+        <span class="youtubeIB">Here you can check our YouTube page!<button type="button" class="youtubeButton" style="margin-left: 20px;"><a href="#">YouTube</a></button></span>
+
+        <span class="youtubeIB">And our Instagram profile!<button type="button" class="youtubeButton" style="margin-left: 20px;"><a href="#">Instagram</a></button></span>
+
+
+    </div>
+
+    <div id="aboutUs"></div>
+
+    <div class="aboutUsContainer">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item collapse-show">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        About Us
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body aboutUsSlova">
+                        Immortal Balkan Esports is a professional esport team based in Croatia, funded in December 2019, with the intention of spreading positive influences and benefits of professional esports activities.
+                        We go against prejudice of professional gaming being negative activity while enabling conditions for talented players for further development and personal growth in Esports world.
+                        We encourage healthy competitive environment, without negativities and erase physical boundaries between countries, nationalities and religions. We gladly cooperate with other teams, organizations
+                        and companies with similar area of interest in further development and improvement of gaming industry.The area of our work is not geographically limited; we are recognizable in Europe and USA mainly
+                        because of top plays provided by our roster team. Current roster counts 6 professional Fortnite players with excellent results on competitions in Balkan, European and USA tournaments. We are developing
+                        competitive teams in other games with a wish to secure our spot in this extremely popular branch of competitive Esport. We are also very successful in organizing Balkan based tournaments that were very
+                        popular in gaming community and very well received. Our community now counts respectable number of members on platforms such as Discord,
+                        Instagram, Twitter, Trovo and Youtube with a cooperation with more than dozen popular Content Creators and gaming influencers. Team manager and founders of this organnization are IB DarkShade and IB Softly with
+                        an extensive help of pro staff, community managers and gaming community without which all idea would be worthless!
+                        <p>So join us and become a part of the most sucessful gaming community!</p> <p>#ibontop</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Our Vision
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body aboutUsSlova">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="partners">
+
+        <div class="text-center">
+            <h3 class="partners">Our Partners</h3>
+            <br>
+            <div class="row">
+                <div class="col-sm-2 partnerSlike">
+                    <a href="https://www.hellenergy.com/hr/dom/">
+                        <img src="hell.png" class="img-responsive hell" style="width:110%" alt="Image">
+                        <p class="hellText">HELL</p>
+                    </a>
+                </div>
+                <div class="col-sm-2 partnerSlike">
+                    <a href="https://twitter.com/HYPEX"><img src="hypexgg.png" class="img-responsive hypex" style="width: 110%" alt="Image">
+                    <p class="hellText">HYPEX</p></a>
+                </div>
+                <div class="col-sm-2 partnerSlike">
+                    <a href="https://disboard.org/servers/tag/tournaments"><img src="rematchgg.jpg" class="img-responsive rematch" style="width:110%" alt="Image">
+                    <p class="rematchText">REMATCH</p></a>
+                </div>
+                <div class="col-sm-2 partnerSlike">
+                    <a href="https://orqafpv.com/"><img src="orqa.png" class="img-responsive" style="width:80%" alt="Image">
+                    <p class="rematchText">ORQA</p></a>
+                </div>
+                <div class="col-sm-2 partnerSlike">
+                    <img src="https://placehold.it/150x80?text=LOGO" class="img-responsive" style="width:90%" alt="Image">
+                    <p class="hellText">Place for your logo!</p>
+                </div>
+                </div>
+            </div>
+        </div><br>
+
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="contact-info">
+                    <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image" />
+                    <h2>Contact Us</h2>
+                    <h4>We would love to hear from you !</h4>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="contact-form">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="fname">First Name:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="lname">Last Name:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Email:</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="comment">Comment:</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="page-footer font-small blue pt-4">
+
+        <div class="container-fluid text-center text-md-left textFooter">
+
+            <div class="row">
+
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <h5 class="text-uppercase">Immortal Balkans Esports</h5>
+                    <p>
+                        Official Immortal Balkans shop tailored to <br />suit only the greatest!
+                    </p>
+                    <p>
+
+                        Email: immortalbalkans@gmail.com
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <div class="contactForma">
+
+
+        </div>
+
+        </div>
+
+
+        <div class="footer-copyright text-center py-3">
+            © Copyright Immortal Balkans Esports. All Rights Reserved
+        </div>
+
+    </footer>
+
+    <script type="text/javascript">
+
+        // Set a same-site cookie for first-party contexts
+        document.cookie = 'cookie1=value1; SameSite=Lax';
+        // Set a cross-site cookie for third-party contexts
+        document.cookie = 'cookie2=value2; SameSite=None; Secure';
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+        function script() {
+            setTimeout(function () {
+                document.getElementById('elementToMove').style.left = '1000px';
+            }, 4000);
+        }
+
+        window.addEventListener(
+            "scroll",
+            () => {
+                document.body.style.setProperty(
+                    "--scroll",
+                    window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+                );
+            },
+            false
+        );
+
+    </script>
+
+    <script src="http://www.gmodules.com/ig/ifr?url=http://www.google.com/ig/modules/youtube.xml&up_channel=CaliChick94066&synd=open&w=320&h=390&title=&border=%23ffffff%7C3px%2C1px+solid+%23999999&output=js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
