@@ -1,0 +1,523 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title></title>
+
+    <style type="text/css">
+
+        .textZaMerch {
+            text-align: center;
+            margin-top: 650px;
+        }
+
+        .textZaMerch2 {
+            text-align: center;
+            margin-top: 650px;
+        }
+
+        .container {
+
+            margin-top: 100px;
+
+        }
+
+        #slideshow1 {
+            position: absolute;
+            width: 400px;
+            height: 600px;
+            display: block;
+            margin-left: 100px;
+        }
+
+        #slideshow2 {
+            position: absolute;
+            margin-left: 800px;
+            margin-top: -25px;
+            width: 600px;
+            height: 600px;
+        }
+
+
+        * {
+            box-sizing: border-box
+        }
+
+        .mySlides1, .mySlides2 {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 600px;
+            position: absolute;
+            margin: auto;
+            margin-left: -100px;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            background-color: black;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+            /* On hover, add a grey background color */
+            .prev:hover, .next:hover {
+                background-color: #f1f1f1;
+                color: black;
+            }
+
+        .navbar {
+            height: 100px;
+            position: static;
+            background-color: #000000 !important;
+        }
+
+
+        .navbar-right {
+            position: relative;
+            right: 0;
+        }
+
+            .navbar-right li {
+                float: right;
+            }
+
+        .slova {
+            color: #E18403 !important;
+        }
+
+            .slova:hover {
+                background-color: blue !important;
+                color: white !important;
+            }
+
+        .wrap {
+            padding: 15px;
+        }
+
+        #absolute {
+            position: relative;
+            width: 100%;
+            height: 120px;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+        .icon-bar {
+            position: fixed;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            right: 0;
+        }
+
+            /* Style the icon bar links */
+            .icon-bar a {
+                display: block;
+                text-align: center;
+                padding: 16px;
+                transition: all 0.3s ease;
+                color: white;
+                font-size: 20px;
+            }
+
+                /* Style the social media icons with color, if you want */
+                .icon-bar a:hover {
+                    background-color: #000;
+                }
+
+        .facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .instagram {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .page-footer {
+            background-color: #000000;
+            color: #E18403;
+            position: absolute;
+            margin-top: 1000px;
+            width: 100%;
+        }
+
+        .footerText {
+            padding-left: 80px;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .prev, .next, .text {
+                font-size: 11px
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="navbar-dark bg-dark wrap navbar" id="absolute">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="home">
+
+            <a class="navbar-brand left" href="#" style="color: #E18403" image src="../logo.png">Immortal Balkans Esport</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-right">
+
+            <div class="wrap">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link slova" href="file:///C:/Users/admer/OneDrive/Desktop/Projekti/Immortal%20Balkans%20kod.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link slova" href="file:///C:/Users/admer/OneDrive/Desktop/Projekti/IBAboutUs.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link slova" href="file:///C:/Users/admer/OneDrive/Desktop/Projekti/IBPartners.html">Partners</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link slova" href="file:///C:/Users/admer/OneDrive/Desktop/Projekti/IBContact.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle slova" href="file:///C:/Users/admer/OneDrive/Desktop/Projekti/IBShop.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Shop
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Hoodies</a>
+                                <a class="dropdown-item" href="#">Shirts</a>
+                                <a class="dropdown-item" href="#">Customized merch</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link slova" href="file:///C:/Users/admer/OneDrive/Desktop/Projekti/IBPrivacyStatement.html">Privacy Statment</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <div class="container">
+
+        <div id="slideshow1" class="slideshow-container">
+
+            <div class="slideshow-container">
+                <div class="mySlides1">
+                    <img src="duksaNaprijed.jpeg" style="width:600px; height:600px;">
+                </div>
+
+                <div class="mySlides1">
+                    <img src="duksaNazad.jpeg" style="width:600px; height:600px;">
+                </div>
+
+                <div class="mySlides1">
+                    <img src="velicine.jpeg" style="width:600px; height:600px;">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+
+            <div class="textZaMerch2">
+
+                <h2> MEN HOODIE </h2>
+                <p>IB OFFICIAL HOODIE</p>
+                <p>High quality material and print, hand sewed, long-sleeved hoodie.</p>
+                <p>Official IB logo on the front and sponsor logo on the back side.</p>
+                <p>100% cotton.</p>
+                <p>Shipping included in the price.</p>
+            </div>
+
+            <a href="/product/29/pants" title="Add to cart" class="Button AddToCart"> <span>Add to cart</span> </a>
+
+        </div>
+        <br>
+
+
+
+
+
+        <div id="slideshow2" class="slideshow-container">
+
+            <div class="slideshow-container">
+                <div class="mySlides2">
+                    <img src="unnamed3.jpg" style="width:600px; height:600px;">
+                </div>
+
+                <div class="mySlides2">
+                    <img src="maicaNazad.jpeg" style="width:600px; height:600px;">
+                </div>
+
+                <div class="mySlides2">
+                    <img src="velicinaMaica.jpeg" style="width:600px; height:600px;">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+
+            <div class="textZaMerch">
+
+                <h2> MEN T-SHIRT </h2>
+                <p>IB OFFICIAL HOODIE-CUSTOMIZED</p>
+                <p>High quality material and print, hand sewed, long-sleeved hoodie.</p>
+                <p>Official IB logo on the front and sponsor logo on the back side.</p>
+                <p>100% cotton.</p>
+                <p>Shipping included in the price.</p>
+            </div>
+
+            <a href="/product/29/pants" title="Add to cart" class="Button AddToCart"> <span>Add to cart</span> </a>
+
+        </div>
+        <br>
+    </div>
+
+    <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+    </div>
+
+
+    <footer class="page-footer font-small blue pt-4">
+
+        <div class="container-fluid text-center text-md-left">
+
+            <div class="row">
+
+                <div class="col-md-6 mt-md-0 mt-3 footerText">
+
+                    <h5 class="text-uppercase">Immortal Balkans Esports</h5>
+                    <p>
+                        Official Immortal Balkans shop tailored to <br />suit only the greatest!
+                    </p>
+                    <p>
+
+                        Email: immortalbalkans@gmail.com
+                    </p>
+
+                </div>
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-copyright text-center py-3">
+            © 2021 Copyright: Immortal Balkans Esports
+        </div>
+
+    </footer>
+
+    <script type="text/javascript">
+
+
+        var slideIndex = [1, 1];
+        var slideId = ["mySlides1", "mySlides2"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+
+        function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+        }
+
+        function showSlides(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) { slideIndex[no] = 1 }
+            if (n < 1) { slideIndex[no] = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex[no] - 1].style.display = "block";
+        }
+
+        /*
+* Adding products from lists
+*/
+        $(".Product .AddToCart").on("click", function (event) {
+            event.preventDefault();
+
+            /*
+            First, the clicked link and the product element around it are saved
+            */
+            var $link = $(event.currentTarget);
+            var $product = $link.closest('.Product');
+
+            /*
+            * Based on the class name of the product element, you can see whether it has variations, customizations, or downloadable files.
+            *
+            * If so, the visitor is directed to the product page to make the necessary choices to add the product to the shopping cart.
+            */
+            if ($product.hasClass('ProductVariations') || $product.hasClass('ProductTailorings') || $product.hasClass('ProductDownloads')) {
+                window.location.href = $link.attr('href');
+            }
+
+            /*
+            * Otherwise, the product is added directly from the list to the shopping cart.
+            */
+            else {
+
+                // The productID is extracted from the link
+                productID = $link.attr('href').split('/')[2];
+
+                // A POST request to add the product to the shopping cart is sent.
+                $.ajax({
+                    type: "POST",
+                    url: "/cart",
+
+                    /*
+                    * A JSON object is sent as the request's content, where only the
+                    * product ID is needed.
+                    */
+                    data: { products: [{ product_id: productID }] },
+                    success: function () {
+
+                        /*
+                        * After a successful request, the shopping cart is updated.
+                        */
+                        $(".MiniCartContainer").empty();
+                        $.ajax({
+                            type: "GET",
+                            url: "/interface/MiniCart",
+                            success: function (data) {
+
+                                $(".MiniCartContainer").html(data);
+                            }
+                        });
+                    }
+                });
+            }
+        });
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+</body>
+</html>
